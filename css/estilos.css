@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+}
+.dashboard {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 90vh;
+}
+
+/* barra izquierda */
+.sidebar-left, .sidebar-right {
+    width: 20%;
+    padding: 20px;
+    background: #eaf2f8;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+.sidebar-right {
+    border-left: 1px solid #ddd;
+}
+
+.sidebar-left ul, .sidebar-right ul {
+    list-style: none;
+}
+
+.sidebar-left ul li, .sidebar-right ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-left ul li a, .sidebar-right ul li a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.sidebar-left ul li a:hover, .sidebar-right ul li a:hover {
+    text-decoration: underline;
+}
+
+/* centro */
+.central-area {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.central-area h2 {
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+/* búsqueda de amigos */
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li a {
+    color: #3498db;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.option, .post {
+    background: #eaf2f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.option:hover, .post:hover {
+    transform: scale(1.05);
+}
+
+.profile-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-card h3 {
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    margin-bottom: 5px;
+    color: #777;
+}
